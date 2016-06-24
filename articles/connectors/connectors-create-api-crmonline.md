@@ -41,7 +41,7 @@ The CRM connector includes the following actions. There are no triggers.
 
 | Triggers | Actions|
 | --- | --- |
-|None| <ul><li>Create a new record</li><li>Gets records</li><li>Delete a record</li><li>Gets a record</li><li>Gets entities</li><li>Update an item</li></ul>
+|<ul><li>When a record is created</li><li>When a record is updated</li></ul>| <ul><li>Create a new record</li><li>Gets records</li><li>Delete a record</li><li>Gets a record</li><li>Gets entities</li><li>Update an item</li></ul>
 
 All connectors support data in JSON and XML formats.
 
@@ -63,6 +63,19 @@ When you add this connector to your logic apps, you must sign in to Dynamics CRM
 After you create the connection, you enter the CRM Online properties, like the table or dataset. The **REST API reference** in this topic describes these properties.
 
 >[AZURE.TIP] You can use this connection in other logic apps.
+
+## Use the connector as a trigger
+1. In the logic add trigger selection, select **"Dynamics CRM Online - When a record is created"** or **"Dynamics CRM Online - When a record is updated"**
+![Configure CRM Online][16]
+2. Sign in to Dynamics CRM online 
+3. Select your "Organization Name" from the drop down
+4. Select the "Entity Name"
+5. Addition properties can be configured for Skipping records & filtering or ordering data
+![Configure CRM Online][17]
+
+The default recurrency frequency is set to once per hour. The connector itself does not provide a way to change this during design time, however you can override the frequency in the "Code View". The frequency can not be modified for "Free" or "Basic" Pricing Tiers. 
+
+![Configure CRM Online][18]
 
 ## Swagger REST API reference
 Applies to version: 1.0.
@@ -277,3 +290,6 @@ Go back to the [APIs list](apis-list.md).
 [13]: ./media/connectors-create-api-crmonline/crmconfig1.png
 [14]: ./media/connectors-create-api-crmonline/crmconfig2.png
 [15]: ./media/connectors-create-api-crmonline/crmconfig3.png
+[16]: ./media/connectors-create-api-crmonline/crmtriggerselection.png
+[17]: ./media/connectors-create-api-crmonline/triggerconfiguration.png
+[18]: ./media/connectors-create-api-crmonline/recurrence.png
