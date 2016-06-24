@@ -74,7 +74,6 @@ After you create the connection, you enter the CRM Online properties, like the t
 ![Configure CRM Online][17]
 
 The default recurrency frequency is set to once per hour. The connector itself does not provide a way to change this during design time, however you can override the frequency in the "Code View". The frequency can not be modified for "Free" or "Basic" Pricing Tiers. 
-
 ![Configure CRM Online][18]
 
 ## Swagger REST API reference
@@ -292,4 +291,4 @@ Go back to the [APIs list](apis-list.md).
 [15]: ./media/connectors-create-api-crmonline/crmconfig3.png
 [16]: ./media/connectors-create-api-crmonline/crmtriggerselection.png
 [17]: ./media/connectors-create-api-crmonline/triggerconfiguration.png
-[18]: ./media/connectors-create-api-crmonline/recurrence.png
+[18]: ./media/connectors-create-api-crmonline/Recurrence.png
